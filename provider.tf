@@ -5,14 +5,15 @@ terraform {
       version = "3.36.0"
     }
   }
-}
-backend "remote" {
+  backend "remote" {
     organization = "mahmuttasdemir"
  
     workspaces {
       name = "SaturdayErolterraform"
     }
   }
+}
+
 provider "azurerm" {
   # Configuration options
 }
